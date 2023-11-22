@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class CardNegativePage extends StatefulWidget {
-  const CardNegativePage({Key? key});
+  const CardNegativePage({Key? key}) : super(key: key);
 
   @override
   State<CardNegativePage> createState() => _CardNegativePageState();

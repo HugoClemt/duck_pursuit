@@ -101,10 +101,14 @@ class _CardQuestionPageState extends State<CardQuestionPage> {
                               Padding(
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 60.0),
-                                child: Text(
-                                  'Answer : ${questionAndAnswer['answer'] ?? 'N/A'}',
-                                  style: const TextStyle(
-                                    color: Colors.black,
+                                child: Transform(
+                                  alignment: Alignment.center,
+                                  transform: Matrix4.rotationZ(pi),
+                                  child: Text(
+                                    'Answer : ${questionAndAnswer['answer'] ?? 'N/A'}',
+                                    style: const TextStyle(
+                                      color: Colors.black,
+                                    ),
                                   ),
                                 ),
                               ),
